@@ -15,3 +15,20 @@ C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\C
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.pdb
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.genruntimeconfig.cache
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\ref\CleanArchitecture.Data.dll
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Data.deps.json
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Data.runtimeconfig.json
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Data.dll
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Data.pdb
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Domain.dll
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\bin\Debug\net6.0\CleanArchitecture.Domain.pdb
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.csproj.AssemblyReference.cache
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.AssemblyInfoInputs.cache
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.AssemblyInfo.cs
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.csproj.CoreCompileInputs.cache
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.csproj.CopyComplete
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.dll
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\refint\CleanArchitecture.Data.dll
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.pdb
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\CleanArchitecture.Data.genruntimeconfig.cache
+D:\Cursos\CleanArchitecture\CleanArchitecture.Data\obj\Debug\net6.0\ref\CleanArchitecture.Data.dll

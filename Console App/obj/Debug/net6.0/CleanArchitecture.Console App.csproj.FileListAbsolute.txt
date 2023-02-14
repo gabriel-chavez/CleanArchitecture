@@ -73,3 +73,78 @@ C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\C
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.pdb
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.genruntimeconfig.cache
 C:\Users\Gabriel\Documents\3.- CURSOS\06.- CleanArchitecture\CleanArchitecture\Console App\obj\Debug\net6.0\ref\CleanArchitecture.Console App.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Console App.exe
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Console App.deps.json
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Console App.runtimeconfig.json
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Console App.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Console App.pdb
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Azure.Core.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Azure.Identity.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Humanizer.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.CodeDom.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Text.Json.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Data.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Domain.dll
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Data.pdb
+D:\Cursos\CleanArchitecture\Console App\bin\Debug\net6.0\CleanArchitecture.Domain.pdb
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.csproj.AssemblyReference.cache
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.AssemblyInfoInputs.cache
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.AssemblyInfo.cs
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.csproj.CoreCompileInputs.cache
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.csproj.CopyComplete
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.dll
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\refint\CleanArchitecture.Console App.dll
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.pdb
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\CleanArchitecture.Console App.genruntimeconfig.cache
+D:\Cursos\CleanArchitecture\Console App\obj\Debug\net6.0\ref\CleanArchitecture.Console App.dll

@@ -8,7 +8,22 @@ StreamerDbContext dbContext = new();
 //QueryStreaming();
 //await QueryFilter();
 //await QueryMethods();
-await QueryLinq();
+//await QueryLinq();
+await TrackingAndNotTraking();
+async Task TrackingAndNotTraking()
+{
+    //obtiene el resultado y lo guarda en el contexto para el rastreo 
+    var streamerWithTracking = await dbContext!.Streamers!.FirstOrDefaultAsync(x=>x.Id==1);
+    //obtiene el resultado y no es rastreado por el contexto //optimizado para el rendimiento de aplicaciones, EF no realiza ningun procesamiento o almacenamiento adicional
+    //Solo para operaciones de lectura
+    var streamerWithNoTracking = await dbContext!.Streamers!.AsNoTracking().FirstOrDefaultAsync(x=>x.Id==2);
+
+    streamerWithTracking.Nombre = "Neflix Super";
+    streamerWithNoTracking.Nombre = "Amazon Plus";
+    
+    await dbContext!.SaveChangesAsync();
+}
+
 async Task QueryLinq()
 {
     var streamerNombre = "netflix";
@@ -71,7 +86,7 @@ async Task AddNewRecords()
 {
     Streamer streamer = new()
     {
-        Nombre = "Disney",
+        Nombre = "NETFLIX",
         Url = "asdasdasdassd"
     };
     dbContext!.Streamers.Add(streamer);
@@ -82,12 +97,12 @@ async Task AddNewRecords()
     {
         new Video
         {
-            Nombre="Cenicienta",
+            Nombre="STRANGER",
             StreamerId=streamer.Id
         },
         new Video
         {
-            Nombre="101 dalmatas",
+            Nombre="COBRA KAI",
             StreamerId=streamer.Id
         }
     };
