@@ -9,7 +9,91 @@ StreamerDbContext dbContext = new();
 //await QueryFilter();
 //await QueryMethods();
 //await QueryLinq();
-await TrackingAndNotTraking();
+//await TrackingAndNotTraking();
+//await AddNewStreamerWithVideo();
+//await AddNewActorWithVideo();
+//await AddNewDiretorWithVideo();
+await MultipleEntitiesQuery();
+
+async Task MultipleEntitiesQuery()
+{
+    //var videoWithActores = await dbContext!.Videos!.Include(q => q.Actores).FirstOrDefaultAsync(q => q.Id == 1);
+
+    //var actor = await dbContext!.Actores!.Select(q => q.Nombre).ToListAsync();
+
+    var videoWithDirector = await dbContext!.Videos!
+        .Where(q=>q.Director!=null)
+        .Include(q => q.Director)
+        .Select(q =>
+            new
+            {
+                DirectorNombreCompleto = $"{q.Director.Nombre} {q.Director.Apellido}",
+                Movie = q.Nombre
+            }
+
+        ).ToListAsync();
+
+    foreach (var pelicula in videoWithDirector)
+    {
+        Console.WriteLine($"{pelicula.Movie} - {pelicula.DirectorNombreCompleto}");
+    }
+}
+   
+
+async Task AddNewDiretorWithVideo()
+{
+    var director = new Director
+    {
+        Nombre = "Lorenzo",
+        Apellido = "Basteri",
+        VideoId = 1
+    };
+    await dbContext.AddAsync(director);
+    await dbContext.SaveChangesAsync();
+}
+
+async Task AddNewActorWithVideo()
+{
+    var actor = new Actor
+    {
+        Nombre = "Brad",
+        Apellido = "Pitt"
+    };
+
+    await dbContext.AddAsync(actor);
+    await dbContext.SaveChangesAsync();
+
+
+
+    var videoActor = new VideoActor
+    {
+        ActorId = actor.Id,
+        VideoId = 1
+    };
+
+    await dbContext.AddAsync(videoActor);
+    await dbContext.SaveChangesAsync();
+
+
+}
+
+async Task AddNewStreamerWithVideo()
+{
+    var pantaya = new Streamer
+    {
+        Nombre = "Pantaya"
+    };
+    var hungerGames = new Video
+    {
+        Nombre = "hungerGames",
+        Streamer = pantaya
+    };
+    await dbContext.AddAsync(hungerGames);
+    await dbContext.SaveChangesAsync();
+
+
+}
+
 async Task TrackingAndNotTraking()
 {
     //obtiene el resultado y lo guarda en el contexto para el rastreo 
