@@ -17,9 +17,9 @@ await MultipleEntitiesQuery();
 
 async Task MultipleEntitiesQuery()
 {
-    //var videoWithActores = await dbContext!.Videos!.Include(q => q.Actores).FirstOrDefaultAsync(q => q.Id == 1);
+    var videoWithActores = await dbContext!.Videos!.Include(q => q.Actores).FirstOrDefaultAsync(q => q.Id == 1);
 
-    //var actor = await dbContext!.Actores!.Select(q => q.Nombre).ToListAsync();
+    var actor = await dbContext!.Actores!.Select(q => q.Nombre).ToListAsync();
 
     var videoWithDirector = await dbContext!.Videos!
         .Where(q=>q.Director!=null)
