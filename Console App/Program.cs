@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using CleanArchitecture.Data;
 using CleanArchitecture.Domain;
+using CleanArchitecture.Infraestructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 StreamerDbContext dbContext = new();
