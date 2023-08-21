@@ -2,6 +2,7 @@
 using CleanArchitecture.Application.Features.Streamers.Commands.DeleteStreamer;
 using CleanArchitecture.Application.Features.Streamers.Commands.UpdateStreamer;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -18,6 +19,7 @@ namespace CleanArchitecture.API.Controllers
             _mediator = mediator;
         }
         [HttpPost(Name = "CreateStreamer")]
+        [Authorize(Roles ="Administrator")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<int>> CreateStreamer([FromBody] CreateStreamerCommand command)
         {

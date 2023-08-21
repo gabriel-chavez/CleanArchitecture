@@ -4,6 +4,8 @@ namespace CleanArchitecture.Application.Exception
 {
     public class ValidationException : ApplicationException
     {
+        public IDictionary<string, string[]> Errors { get; }
+
         public ValidationException() : base("Se presentaron uno o mas errores de validación")
         {
             Errors = new Dictionary<string, string[]>();
@@ -14,7 +16,6 @@ namespace CleanArchitecture.Application.Exception
                 .GroupBy(e => e.PropertyName, e => e.ErrorMessage)
                 .ToDictionary(failureGroup => failureGroup.Key, failureGroup => failureGroup.ToArray());
         }
-        public IDictionary<string, string[]> Errors { get;}
-
+        
     }
 }

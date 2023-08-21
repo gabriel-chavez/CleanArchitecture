@@ -1,5 +1,6 @@
 ﻿using CleanArchitecture.Application.Contracts.Infraestructure;
 using CleanArchitecture.Application.Contracts.Persistence;
+using CleanArchitecture.Infraestructure.Email;
 using CleanArchitecture.Infraestructure.Persistence;
 using CleanArchitecture.Infraestructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -15,14 +16,14 @@ namespace CleanArchitecture.Infraestructure
 
 
             services.AddDbContext<StreamerDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ConectionString"))
+                options.UseSqlServer(configuration.GetConnectionString("ConnectionString"))
             );
             services.AddScoped(typeof(IAsyncRepositeory<>), typeof(RepositoryBase<>));
-            services.AddScoped<IVideoRepository, IVideoRepository>();
+            services.AddScoped<IVideoRepository, VideoRepository>();
             services.AddScoped<IStreamerRepository, StreamerRepository>();
 
             //services.Configure<EmailSettings>(c => configuration.GetSection("EmailSettings"));
-            //services.AddTransient<IEmailService,EmailService>();
+            services.AddTransient<IEmailService,EmailService>();
             return services;
 
         }

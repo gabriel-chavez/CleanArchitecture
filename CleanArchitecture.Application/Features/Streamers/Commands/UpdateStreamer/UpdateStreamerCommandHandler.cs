@@ -2,6 +2,7 @@
 using CleanArchitecture.Application.Contracts.Persistence;
 using CleanArchitecture.Application.Exception;
 using CleanArchitecture.Application.Features.Streamers.Commands.CreateStreamer;
+using CleanArchitecture.Application.Mappings;
 using CleanArchitecture.Domain;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -30,6 +31,7 @@ namespace CleanArchitecture.Application.Features.Streamers.Commands.UpdateStream
                 _logger.LogError($"No se encuntro el streamer id {request.Id}");
                 throw new NotFoundException(nameof(Streamer), request.Id);
             }
+            
             _mapper.Map(request, streamerToUpdate, typeof(UpdateStreamerCommand), typeof(Streamer));
             await _streamerRepository.UpdateAsync(streamerToUpdate);
             _logger.LogInformation($"La operación fue exitosa actualizando el streamer {request.Id}");
