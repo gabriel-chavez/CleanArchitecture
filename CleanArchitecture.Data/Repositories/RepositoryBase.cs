@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace CleanArchitecture.Infraestructure.Repositories
 {
-    public class RepositoryBase<T> : IAsyncRepositeory<T> where T : BaseDomainModel
+    public class RepositoryBase<T> : IAsyncRepository<T> where T : BaseDomainModel
     {
         protected readonly StreamerDbContext _context;
 
@@ -21,23 +21,19 @@ namespace CleanArchitecture.Infraestructure.Repositories
             await _context.SaveChangesAsync();
             return entity;
         }
-
         public async Task DeleteAsync(T entity)
         {
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
-        }
-
+        }       
         public async Task<IReadOnlyList<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
         }
-
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> preddicate)
         {
             return await _context.Set<T>().Where(preddicate).ToListAsync();
         }
-
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> preddicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -53,7 +49,6 @@ namespace CleanArchitecture.Infraestructure.Repositories
             return await query.ToListAsync();
 
         }
-
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> preddicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeString = null, bool disableTracking = true)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -68,17 +63,31 @@ namespace CleanArchitecture.Infraestructure.Repositories
 
             return await query.ToListAsync();
         }
-
         public virtual async Task<T> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
-
         public async Task<T> UpdateAsync(T entity)
         {
+            _context.Set<T>().Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return entity;
         }
+        public void AddEntity(T entity)
+        {
+            _context.Set<T>().Add(entity);
+        }
+        public void UpdateEntity(T entity)
+        {
+            _context.Set<T>().Attach(entity);
+            _context.Entry(entity).State = EntityState.Modified;
+        }
+        public void DeleteEntity(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+
     }
+
 }

@@ -1,4 +1,5 @@
 using CleanAchitecture.Identity;
+using CleanArchitecture.API.Middleware;
 using CleanArchitecture.Application;
 using CleanArchitecture.Infraestructure;
 
@@ -31,6 +32,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
+
 app.UseAuthentication();
 
 app.UseAuthorization();

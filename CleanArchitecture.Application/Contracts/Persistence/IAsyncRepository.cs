@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace CleanArchitecture.Application.Contracts.Persistence
 {
-    public interface IAsyncRepositeory<T> where T : BaseDomainModel
+    public interface IAsyncRepository<T> where T : BaseDomainModel
     {
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> preddicate);
@@ -23,6 +23,10 @@ namespace CleanArchitecture.Application.Contracts.Persistence
         Task<T> AddAsync(T entity);
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(T entity);
+
+        void AddEntity(T entity);
+        void UpdateEntity(T entity);
+        void DeleteEntity(T entity);
 
     }
 }

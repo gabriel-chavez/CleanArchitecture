@@ -16,7 +16,7 @@ namespace CleanArchitecture.API.Controllers
             _mediator = mediator;
         }
         [HttpGet("{username}", Name = "GetVideo")]
-        [Authorize]
+        //[Authorize]
         [ProducesResponseType(typeof(IEnumerable<VideosVm>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<VideosVm>>> GetVideosByUserName(string username)
         {
